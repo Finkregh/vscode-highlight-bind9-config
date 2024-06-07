@@ -1,0 +1,25 @@
+// copy from https://github.com/microsoft/vscode/blob/fd11ed87fdf1f8e46575e027644406f51f0666f6/extensions/ini/properties.language-configuration.json
+{
+	"comments": {
+		"lineComment": "#",
+		"blockComment": [ "#", " " ]
+	},
+	"brackets": [
+		["{", "}"],
+		["[", "]"],
+		["(", ")"]
+	],
+	"autoClosingPairs": [
+		["{", "}"],
+		["[", "]"],
+		["(", ")"],
+		{ "open": "\"", "close": "\"", "notIn": ["string"] }
+	],
+	"surroundingPairs": [
+		["{", "}"],
+		["[", "]"],
+		["(", ")"],
+		["\"", "\""],
+		["'", "'"]
+	]
+}

@@ -1,0 +1,54 @@
+{
+  "information_for_contributors": [
+    "This file has been converted from https://github.com/textmate/ini.tmbundle/blob/master/Syntaxes/Ini.plist",
+    "If you want to provide a fix or improvement, please create a pull request against the original repository.",
+    "Once accepted there, we are happy to receive an update request."
+  ],
+  "version": "https://github.com/textmate/ini.tmbundle/commit/2af0cbb0704940f967152616f2f1ff0aae6287a6",
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "bind9conf",
+  "scopeName": "source.bind9conf",
+  "patterns": [
+    { "include": "#keywords" },
+    { "include": "#comment" },
+    { "include": "#comma" },
+    { "include": "#string" }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.bind9conf",
+          "match": "\\b(tls (\\w)?|key(\\w)?|controls|logging|options|catalog-zones|allow|keys|if|while|for|return)\\b"
+        }
+      ]
+    },
+    "comma": {
+      "match": ";",
+      "name": "punctuation.separator.delimiter.comma.bind9conf"
+    },
+    "comment": {
+      "begin": "#",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.whitespace.comment.leading.bind9conf"
+        }
+      },
+      "end": "(?!\\G)"
+    },
+    "string": {
+      "begin": "\"",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin.bind9conf"
+        }
+      },
+      "end": "\"",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.bind9conf"
+        }
+      }
+    }
+  }
+}
